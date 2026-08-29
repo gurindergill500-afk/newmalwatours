@@ -4,100 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Title & Meta Tags -->
-    <title>New Malwa Tour & Travel | Bus Booking & Taxi Service in Amritsar</title>
-    <meta name="description" content="Best tour and travel agency in Amritsar. Book luxury buses, tempo travellers, self drive cars, and outstation taxi services to Delhi, Chandigarh, and Himachal.">
-    <meta name="keywords" content="bus booking in Amritsar, bus charter in Amritsar, bus rental in Amritsar, luxury bus booking in Amritsar, tempo traveller booking in Amritsar, taxi service in Amritsar, cab service in Amritsar, car rental in Amritsar, self drive car rental in Amritsar, Innova rental in Amritsar, tour and travel agency in Amritsar, outstation taxi service from Amritsar, Amritsar to Delhi taxi, Amritsar to Chandigarh taxi, Amritsar to Himachal taxi">
+    <!-- SEO Meta Tags with Your Keywords -->
+    <title>Taxi Service & Rental Cars in Amritsar | Bus Booking & Tempo Traveller Near Me</title>
+    <meta name="description" content="Best taxi service in Amritsar, tempo traveller near me, rental cars near me, and bus booking in Amritsar. Contact New Malwa Tour & Travels for Scorpio N & all vehicle bookings.">
+    <meta name="keywords" content="taxi service near me, Tempu travel near me, Bus booking near me, Rental cars near me, Taxi service in Amritsar, Tempu travel in Amritsar, Bus booking in Amritsar">
 
-    <!-- CSS Styling -->
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        
-        /* Header / Banner */
-        header { 
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-            color: #fff; text-align: center; padding: 60px 20px; 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
-        header p { font-size: 1.2rem; color: #f1c40f; font-weight: bold; }
 
-        /* Main Container */
-        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
-        /* Grid Layout */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px; }
+        /* Hero / Header Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://images.unsplash.com/photo-1588096344356-9a4053933c03?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 40px 20px;
+        }
 
-        /* Cards */
-        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 200px; object-fit: cover; }
-        .card-content { padding: 20px; }
-        .card-content h2 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 10px; border-bottom: 2px solid #f1c40f; padding-bottom: 5px; }
-        .card-content p { font-size: 0.95rem; color: #555; margin-bottom: 15px; }
+        .hero h1 {
+            font-size: 2.2rem;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
 
-        /* Call To Action Buttons */
-        .btn-container { text-align: center; margin-top: 40px; }
-        .btn { display: inline-block; padding: 12px 25px; margin: 5px; border-radius: 30px; text-decoration: none; font-weight: bold; color: #fff; transition: background 0.3s; }
-        .btn-call { background: #e74c3c; }
-        .btn-call:hover { background: #c0392b; }
-        .btn-whatsapp { background: #27ae60; }
-        .btn-whatsapp:hover { background: #219150; }
+        .hero h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-weight: 400;
+        }
 
-        footer { text-align: center; padding: 20px; background: #2c3e50; color: #fff; margin-top: 40px; }
+        .price-badge {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        /* Form Container */
+        .container {
+            max-width: 550px;
+            margin: -50px auto 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 10;
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .btn-inquire {
+            width: 100%;
+            background-color: #25D366;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-inquire:hover {
+            background-color: #1eb854;
+        }
+
+        /* Services Section with Keywords */
+        .services-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-top: 4px solid #ffcc00;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Hero Banner -->
-    <header>
-        <h1>New Malwa Tour & Travel</h1>
-        <p>Top Tour and Travel Agency in Amritsar</p>
-    </header>
-
-    <!-- Content Section -->
-    <div class="container">
-        <div class="services-grid">
-            
-            <!-- Card 1: Buses -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=600&q=80" alt="Bus Rental Amritsar">
-                <div class="card-content">
-                    <h2>Bus Booking & Bus Rental in Amritsar</h2>
-                    <p>We provide affordable bus booking in Amritsar, luxury bus booking in Amritsar, bus charter in Amritsar, and bus rental in Amritsar. You can also book tempo traveller booking in Amritsar for group tours.</p>
-                </div>
-            </div>
-
-            <!-- Card 2: Taxis & Self Drive -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80" alt="Taxi Service Amritsar">
-                <div class="card-content">
-                    <h2>Taxi Service & Car Rental in Amritsar</h2>
-                    <p>Looking for reliable cab service in Amritsar or car rental in Amritsar? We offer self drive car rental in Amritsar, Innova rental in Amritsar, and 24/7 taxi service in Amritsar.</p>
-                </div>
-            </div>
-
-            <!-- Card 3: Outstation -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80" alt="Outstation Taxi Service">
-                <div class="card-content">
-                    <h2>Outstation Taxi Service from Amritsar</h2>
-                    <p>Book outstation taxi service from Amritsar for long route trips. Popular routes include Amritsar to Delhi taxi, Amritsar to Chandigarh taxi, and Amritsar to Himachal taxi.</p>
-                </div>
-            </div>
-
+    <!-- Header / Hero Section -->
+    <div class="hero">
+        <h1>Scorpio N & Premium Travel Services</h1>
+        <h2>New Malwa Tour & Travels</h2>
+        <div class="price-badge">
+            Scorpio N Booking: ₹5,500/Day | 1 Week or More: ₹4,500/Day
         </div>
+    </div>
 
-        <!-- Direct Contact Buttons -->
-        <div class="btn-container">
-            <a href="tel:+919876543210" class="btn btn-call">📞 Call Now for Booking</a>
-            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">💬 WhatsApp Us</a>
+    <!-- WhatsApp Inquiry Form Section -->
+    <div class="container">
+        <h2 class="form-title">Quick Booking Inquiry</h2>
+        <form id="inquiryForm">
+            <div class="form-group">
+                <label for="serviceType">Service Required:</label>
+                <select id="serviceType">
+                    <option value="Scorpio N Rental">Scorpio N Booking</option>
+                    <option value="Taxi Service">Taxi Service in Amritsar</option>
+                    <option value="Tempo Traveller">Tempo Traveller Booking</option>
+                    <option value="Bus Booking">Bus Booking</option>
+                    <option value="Rental Car">Rental Cars</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fromLoc">From (ਕਿੱਥੋਂ):</label>
+                <input type="text" id="fromLoc" placeholder="Enter pickup location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whereLoc">Where (ਕਿੱਥੇ):</label>
+                <input type="text" id="whereLoc" placeholder="Enter destination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whenDate">When (ਕਦੋਂ):</label>
+                <input type="date" id="whenDate" required>
+            </div>
+
+            <button type="button" class="btn-inquire" onclick="sendToWhatsApp()">Inquire Now on WhatsApp</button>
+        </form>
+    </div>
+
+    <!-- Keywords & Services Section for Google Ranking -->
+    <div class="services-section">
+        <h2>Our Travel & Transport Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Taxi Service in Amritsar</h3>
+                <p>Best and affordable <strong>taxi service near me</strong> and <strong>taxi service in Amritsar</strong> for local tourist spots, Golden Temple visit, and outstation trips.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Tempo Traveller Booking</h3>
+                <p>Looking for a <strong>tempu travel near me</strong> or <strong>tempu travel in Amritsar</strong>? Book comfortable 12 to 26 seater tempo travellers for family trips.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Bus Booking Services</h3>
+                <p>Easy <strong>bus booking near me</strong> and <strong>bus booking in Amritsar</strong> for luxury AC buses, marriage functions, and tour groups.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Rental Cars Near Me</h3>
+                <p>Get top-condition self-drive and luxury <strong>rental cars near me</strong> including Mahindra Scorpio N at cheap daily and weekly rates.</p>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>© New Malwa Tour & Travel | All Rights Reserved</p>
+        <p>© 2026 New Malwa Tour & Travels | Call/WhatsApp: <a href="tel:6280354592">+91 6280354592</a></p>
     </footer>
+
+    <script>
+        function sendToWhatsApp() {
+            var service = document.getElementById('serviceType').value;
+            var from = document.getElementById('fromLoc').value;
+            var where = document.getElementById('whereLoc').value;
+            var when = document.getElementById('whenDate').value;
+
+            if (!from || !where || !when) {
+                alert('ਕਿਰਪਾ ਕਰਕੇ ਸਾਰੀਆਂ ਡਿਟੇਲਾਂ ਭਰੋ।');
+                return;
+            }
+
+            var myNumber = "916280354592";
+            var message = "Hello, I want to inquire about booking:%0A" +
+                          "*Service:* " + encodeURIComponent(service) + "%0A" +
+                          "*From:* " + encodeURIComponent(from) + "%0A" +
+                          "*Where:* " + encodeURIComponent(where) + "%0A" +
+                          "*When:* " + encodeURIComponent(when);
+
+            var whatsappUrl = "https://wa.me/" + myNumber + "?text=" + message;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
 
 </body>
 </html>
